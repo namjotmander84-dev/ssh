@@ -11,7 +11,7 @@ echo "=== STEP 1: Fix curl conflict ==="
 dnf swap -y curl-minimal curl || dnf install -y curl --allowerasing
 
 #echo "=== STEP 2: Install SSH server ==="
-#dnf install -y openssh-server
+dnf install -y openssh-server
 
 echo "=== STEP 3: Generate SSH keys ==="
 ssh-keygen -A
