@@ -12,6 +12,8 @@ sleep 3
 echo "=== STEP 3: Show sshx URL ==="
 cat sshx.log | grep -Eo 'https://[^ ]+'
 
+cd ..
+
 echo "=== STEP 4: Run npm build ==="
 npm run build
 
