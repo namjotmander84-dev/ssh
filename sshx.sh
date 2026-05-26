@@ -15,6 +15,6 @@ cat sshx.log | grep -Eo 'https://[^ ]+'
 cd ..
 
 echo "=== STEP 4: Run npm build ==="
-npm run build
+vite build
 
 echo "=== DONE ==="
