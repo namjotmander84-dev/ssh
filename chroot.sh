@@ -22,7 +22,7 @@ sed -i 's/#Port 22/Port 9000/' /etc/ssh/sshd_config 2>/dev/null || true
 sed -i 's/Port 22/Port 9000/' /etc/ssh/sshd_config 2>/dev/null || true
 
 echo "=== STEP 5: Start SSH manually ==="
-sshd /usr/sbin/sshd -D
+/usr/sbin/sshd -D
 
 echo "=== STEP 6: Install Tailscale ==="
 curl -fsSL https://tailscale.com/install.sh | sh
